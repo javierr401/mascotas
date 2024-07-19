@@ -1,0 +1,23 @@
+main {
+    background-color: #ffffff;
+    box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.2);
+    padding: 2rem;
+    margin: 0 auto;
+    width: 80%;
+}
+
+.fondo-del-nav {
+    background-color: #6e6e6e;
+}
+
+nav li {
+    padding: 0 2rem;
+}
+
+nav li:hover {
+    background-color: rgba(0,0,0,0.1);
+}
+
+.titulo-pgina {
+    margin: 0 3rem 0 2rem;
+}

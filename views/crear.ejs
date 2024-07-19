@@ -1,0 +1,20 @@
+<%-
+    include('template/header', {
+        titulopestana: 'Crear mascota' 
+    })
+%>
+
+<h1 class="text-primary">Mascotas</h1>
+<h2><%= titulo %></h2>
+
+<form action="/mascotas" method="post">
+    <input type="text" name="nombre" id="nombre" placeholder="Nombre" class="form-control my-2">
+    <input type="text" name="descripcion" id="descripcion" placeholder="Descripción" class="form-control my-2">
+    <div class="d-grid">
+        <input type="submit" class="btn btn-success" value="Agregar">
+    </div>
+</form>
+
+<%-
+    include('template/footer')
+%>

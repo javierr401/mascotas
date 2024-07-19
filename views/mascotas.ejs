@@ -1,0 +1,34 @@
+<%-
+    include('template/header', {
+        titulopestana: 'Mascotas' 
+    })
+%>
+
+<h1 class="text-primary">Mascotas</h1>
+<h2><%= titulo %></h2>
+
+<a href="mascotas/crear" class="btn btn-success">Crear nueva mascota</a>
+<% if (arrayMascotas.length > 0) { %>
+    <table class="table table-hover">
+        <tr>
+            <th>Id</th>
+            <th>Nombre</th>
+            <th>Descripción</th>
+            <th></th>
+        </tr>
+        <% arrayMascotas.forEach(mascota => { %>
+            <tr>
+                <td><%=mascota.id%></td>
+                <td><%=mascota.nombre%></td>
+                <td><%=mascota.descripcion%></td>
+                <td>
+                    <a href="mascotas/<%=mascota.id%>" class="btn btn-warning btn-sm">Modificar</a>
+                </td>
+            </tr>
+        <% }); %>
+    </table>
+<% } %>
+
+<%-
+    include('template/footer')
+%>
